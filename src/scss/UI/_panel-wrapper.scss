@@ -1,0 +1,27 @@
+.panel-wrapper {
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+  .container {
+    padding: 0 10px;
+  }
+
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 30px;
+    .container {
+      padding: 0 15px;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    .container {
+      padding: 0 32px;
+    }
+  }
+  @include media-breakpoint-up(xxxl) {
+    .container {
+      max-width: 100%;
+      padding: 0 31px;
+    }
+  }
+}

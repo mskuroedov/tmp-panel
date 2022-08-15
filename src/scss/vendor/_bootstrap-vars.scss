@@ -1,0 +1,154 @@
+// Default variable overrides
+//default colors overrides
+$body-bg: white;
+$body-color: #090E34;
+$primary: #4A6CF7;
+$secondary: #090E34;
+
+//buttons overrides
+$btn-focus-box-shadow: none !important;
+$btn-font-size: 16px;
+$btn-line-height: 19px;
+$btn-font-size-sm: 16px;
+$btn-font-weight: 700;
+$btn-padding-y: 14px;
+$btn-padding-x: 14px;
+$btn-padding-y-sm: 6px;
+$btn-padding-x-sm: 14px;
+
+//grid overrides
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 760px,
+        lg: 1000px,
+        xl: 1200px,
+        xxl: 1400px,
+        xxxl: 1859px,
+        xxxxl:2117px
+);
+$container-max-widths: (
+        sm: 540px,
+        md: 760px,
+        lg: 980px,
+        xl: 1140px,
+        xxl: 1320px,
+        xxxl: 1797px,
+        xxxxl:2117px
+);
+$grid-gutter-width: 32px;
+
+$input-padding-y: 13px;
+$input-padding-x: 12px;
+$input-font-size: 14px;
+$input-font-weight: 400;
+$input-line-height: 1.2;
+//
+//$input-padding-y-sm:                    $input-btn-padding-y-sm;
+//$input-padding-x-sm:                    $input-btn-padding-x-sm;
+//$input-font-size-sm:                    $input-btn-font-size-sm;
+//
+//$input-padding-y-lg:                    $input-btn-padding-y-lg;
+//$input-padding-x-lg:                    $input-btn-padding-x-lg;
+//$input-font-size-lg:                    $input-btn-font-size-lg;
+//
+//$input-bg:                              $white;
+//$input-disabled-bg:                     $gray-200;
+//$input-disabled-border-color:           null;
+//
+//$input-color:                           $body-color;
+//$input-border-color:                    $gray-400;
+//$input-border-width:                    $input-btn-border-width;
+//$input-box-shadow:                      $box-shadow-inset;
+//
+$input-border-radius: 10px;
+//$input-border-radius-sm:                $border-radius-sm;
+//$input-border-radius-lg:                $border-radius-lg;
+//
+//$input-focus-bg:                        $input-bg;
+//$input-focus-border-color:              tint-color($component-active-bg, 50%);
+//$input-focus-color:                     $input-color;
+//$input-focus-width:                     $input-btn-focus-width;
+$input-focus-box-shadow: none;
+//
+//$input-placeholder-color:               $gray-600;
+//$input-plaintext-color:                 $body-color;
+//
+//$input-height-border:                   $input-border-width * 2;
+//
+//$input-height-inner:                    add($input-line-height * 1em, $input-padding-y * 2);
+//$input-height-inner-half:               add($input-line-height * .5em, $input-padding-y);
+//$input-height-inner-quarter:            add($input-line-height * .25em, $input-padding-y * .5);
+//
+//$input-height:                          add($input-line-height * 1em, add($input-padding-y * 2, $input-height-border, false));
+//$input-height-sm:                       add($input-line-height * 1em, add($input-padding-y-sm * 2, $input-height-border, false));
+//$input-height-lg:                       add($input-line-height * 1em, add($input-padding-y-lg * 2, $input-height-border, false));
+//
+//$input-transition:                      border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+//INPUT ADDON
+$input-group-addon-padding-x: 17px;
+
+// FORM LABEL
+$form-label-margin-bottom: 8px;
+$form-label-font-size: 16px;
+$form-label-font-weight: 700;
+$form-label-color: #090E34;
+// FORM TEXT
+$form-text-margin-top: 8px;
+$form-text-font-size: 13px;
+$form-text-color: #959CB1;
+//ALERTS
+$alert-padding-y: 20px;
+$alert-padding-x: 19px;
+$alert-border-radius: 5px;
+
+//UTILITIES
+$spacers: (
+        0: 0,
+        1: 1px,
+        3: 3px,
+        5: 5px,
+        10: 10px,
+        20: 20px,
+        30: 30px,
+        40: 40px,
+        50: 50px,
+);
+//MODALS
+//$modal-inner-padding:               $spacer;
+//
+//$modal-footer-margin-between:       .5rem;
+//
+//$modal-dialog-margin:               .5rem;
+//$modal-dialog-margin-y-sm-up:       1.75rem;
+//
+//$modal-title-line-height:           $line-height-base;
+//
+//$modal-content-color:               null;
+//$modal-content-bg:                  $white;
+//$modal-content-border-color:        rgba($black, .2);
+$modal-content-border-width: 0;
+$modal-content-border-radius: 12px;
+//$modal-content-inner-border-radius: subtract($modal-content-border-radius, $modal-content-border-width);
+//$modal-content-box-shadow-xs:       $box-shadow-sm;
+//$modal-content-box-shadow-sm-up:    $box-shadow;
+
+$modal-backdrop-bg: #4A6CF7;
+$modal-backdrop-opacity: .5;
+//$modal-header-border-color:         $border-color;
+//$modal-footer-border-color:         $modal-header-border-color;
+//$modal-header-border-width:         $modal-content-border-width;
+//$modal-footer-border-width:         $modal-header-border-width;
+//$modal-header-padding-y:            $modal-inner-padding;
+//$modal-header-padding-x:            $modal-inner-padding;
+//$modal-header-padding:              $modal-header-padding-y $modal-header-padding-x; // Keep this for backwards compatibility
+
+//$modal-sm:                          300px;
+$modal-md: 510px;
+//$modal-lg:                          800px;
+//$modal-xl:                          1140px;
+//
+//$modal-fade-transform:              translate(0, -50px);
+//$modal-show-transform:              none;
+//$modal-transition:                  transform .3s ease-out;
+//$modal-scale-transform:             scale(1.02);

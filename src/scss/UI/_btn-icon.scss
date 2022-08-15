@@ -1,0 +1,67 @@
+.btn-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background: white;
+  color: #959CB1;
+  border: 1px solid #959CB1;
+  border-radius: 5px;
+  transition: all .2s;
+
+  &:hover {
+    color: $primary;
+  }
+
+  &:active {
+    background: $primary;
+    border-color: $primary;
+    color: white;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $primary;
+  }
+
+  &--lg {
+    width: 32px;
+    height: 32px;
+  }
+
+  &--link {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    width: auto;
+    height: auto;
+
+    &:hover,
+    &:focus {
+      color: $primary;
+    }
+  }
+
+  &--primary {
+    color: $primary;
+
+    &:hover {
+      background: $primary;
+      border-color: $primary;
+      color: white;
+    }
+  }
+
+  &---hover-danger {
+    &:hover {
+      color: $danger;
+    }
+    &:active{
+      background: $danger;
+      border-color: $danger;
+      color: white;
+    }
+  }
+}

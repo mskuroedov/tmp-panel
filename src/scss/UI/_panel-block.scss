@@ -1,0 +1,21 @@
+.panel-block {
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    color: #090E34;
+    margin-bottom: 50px;
+
+    svg {
+      width: 37px;
+      height: 37px;
+      color: #090E34;
+    }
+  }
+
+  &__body {
+  }
+}

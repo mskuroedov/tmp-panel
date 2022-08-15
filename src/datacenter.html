@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>LeetSocks</title>
+    <link rel="stylesheet" href="./css/vendor.min.css">
+    <link rel="stylesheet" href="./css/build.min.css">
+</head>
+<body>
+@@include('components/_header.html')
+<div class="panel-wrapper">
+    @@include('components/datacenter/_list.html')
+    @@include('components/datacenter/_shop.html')
+
+</div>
+<script src="./js/vendors.min.js"></script>
+<script src="./js/header.min.js"></script>
+<script src="./vue/proxyList.js"></script>
+<script src="./vue/proxyShop.js"></script>
+</body>
+</html>

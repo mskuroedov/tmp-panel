@@ -1,0 +1,130 @@
+.radio-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  .label {
+    padding-top: 3px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #959CB1;
+    min-width: 63px;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 24px;
+  }
+}
+
+.radio-item {
+
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  color: #283446;
+  padding-left: 26px;
+
+  input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+  }
+
+  input:checked + span:before {
+    background: #4A6CF7;
+    border-color: #4A6CF7;
+  }
+
+  span {
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      left: 0px;
+      top: 3px;
+      border: 1px solid rgba(149, 156, 177, .5);
+      border-radius: 100%;
+      transition: all .2s;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      left: 4px;
+      top: 7px;
+      background: #FFFFFF;
+      border-radius: 100%;
+    }
+  }
+
+}
+
+.radio-pill {
+  position: relative;
+
+  input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+  }
+
+  input:checked + .radio-pill__inner {
+    background: #F1F6FF;
+    border: 1px solid #4A6CF7;
+    color: #4A6CF7;
+
+    img {
+      filter: invert(56%) sepia(91%) saturate(5558%) hue-rotate(218deg) brightness(100%) contrast(94%)
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+    min-width: 61px;
+
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    color: #283446;
+    text-align: center;
+    padding: 9px 15px;
+    cursor: pointer;
+    transition: all .2s;
+  }
+
+  &:hover {
+    .val {
+      background: #F1F6FF;
+      border: 1px solid #4A6CF7;
+      color: #4A6CF7;
+
+      img {
+        filter: invert(56%) sepia(91%) saturate(5558%) hue-rotate(218deg) brightness(100%) contrast(94%)
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    &__inner {
+      padding: 9px 29px;
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+}

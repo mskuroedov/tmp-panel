@@ -1,0 +1,84 @@
+.payment {
+  &__amount {
+    margin-bottom: 50px;
+
+    @include media-breakpoint-up(md) {
+      max-width: 400px;
+    }
+  }
+
+  &__methods {
+    margin-bottom: 50px;
+
+    .methods-grid {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-row-gap: 15px;
+      @include media-breakpoint-up(md) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 15px;
+      }
+      @include media-breakpoint-up(lg) {
+        grid-template-columns: repeat(5, 1fr);
+        .crypto{
+          grid-row: 2;
+        }
+      }
+    }
+
+    .payment-method {
+      input {
+        visibility: hidden;
+      }
+
+      label {
+        display: flex;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #090E34;
+        border: 1px solid #BFD5EB;
+        border-radius: 5px;
+        height: 44px;
+        background: white;
+        transition: all .2s;
+
+        .icon {
+          border-right: 1px solid #BFD5EB;
+          width: 43px;
+          height: 42px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .name {
+          padding: 0 10px;
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      input:checked + label {
+        background: #4A6CF7;
+        border-color: #4A6CF7;
+        color: white;
+
+        .icon {
+          border-right-color: #7A94FF;
+        }
+
+        .active-color-inverse-icon img {
+          filter: brightness(0) invert(1);
+        }
+      }
+    }
+  }
+
+  &__actions {
+    margin-top: 50px;
+  }
+  @include media-breakpoint-up(xxxl){
+    max-width: 910px;
+  }
+}
