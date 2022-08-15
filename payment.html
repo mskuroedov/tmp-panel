@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>LeetSocks</title>
+    <link rel="stylesheet" href="./css/vendor.min.css">
+    <link rel="stylesheet" href="./css/build.min.css">
+</head>
+<body>
+<header class="header">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md header__inner">
+            <a href="/personal.html" class="header__logo">
+                <img src="./images/logo-header.svg" alt="">
+            </a>
+
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="collapse navbar-collapse header__user-actions" id="navbarNav">
+                <div class="links">
+                    <a href="#" class="contact-link">
+                        <img src="./images/icons/wechat.svg" alt="">
+                        пример
+                    </a>
+                    <a href="#" class="contact-link">
+                        <img src="./images/icons/telegram.svg" alt="">
+                        пример
+                    </a>
+                </div>
+                <a href="payment.html" class="btn btn-primary">Пополнить баланс</a>
+                <div class="user-dropdown dropdown d-none d-md-flex" id="user-header-dropdown">
+                    <a href="#"
+                       class="dropdown-toggle"
+                       data-bs-toggle="dropdown"
+                       role="button"
+                       aria-haspopup="true"
+                       aria-expanded="false">Nickname
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="sign-in.html">Выйти</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="d-md-none mobile-user-link">Nickname</a>
+                <a href="#" class="d-md-none mobile-user-link">Выйти</a>
+                <div class="user-block" style="display: none">
+                    <a href="/panel/sign-in.html" class="btn btn-secondary btn-login">Вход</a>
+                    <a href="/panel/sign-up.html" class="btn btn-primary btn-signup">Регистрация</a>
+                </div>
+            </div>
+            <div class="header__navigation">
+                <a href="personal.html" class="active">
+                    <span>
+                    <img src="./images/icons/nav/nav-personal.svg" alt="">
+                    Персональные
+                    </span>
+                </a>
+                <a href="mobile.html">
+                    <span>
+                    <img src="./images/icons/nav/nav-mobile.svg" alt="">
+                    Мобильные
+                    </span>
+                </a>
+                <a href="datacenter.html">
+                    <span>
+                    <img src="./images/icons/nav/nav-dc.svg" alt="">
+                    Серверные
+                    </span>
+                </a>
+                <a href="faq.html">
+                    <span>
+                    <img src="./images/icons/nav/nav-faq.svg" alt="">
+                    FAQ
+                    </span>
+                </a>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="panel-wrapper">
+    <div class="container">
+        <div class="panel-block">
+            <div class="panel-block__title">Оплата</div>
+            <div class="panel-block__body payment">
+                <div class="payment__amount">
+                    <label for="amount" class="form-label">Сумма пополнения:</label>
+                    <div class="input-group">
+                        <div class="input-group-text">$</div>
+                        <input type="number" class="form-control" id="amount">
+                    </div>
+                    <div class="form-text">Минимальная сумма - $20</div>
+                </div>
+                <div class="payment__methods">
+                    <div class="form-label">Способ оплаты:</div>
+                    <div class="methods-grid">
+                        <div class="payment-method">
+                            <input type="radio" name="payment" hidden value="card" id="card" checked>
+                            <label for="card">
+                            <span class="icon active-color-inverse-icon">
+                                <img src="./images/icons/payment/card.svg" alt="">
+                            </span>
+                                <span class="name">Карта</span>
+                            </label>
+                        </div>
+                        <div class="payment-method">
+                            <input type="radio" name="payment" hidden value="card-ru" id="card-ru">
+                            <label for="card-ru">
+                            <span class="icon">
+                                <img src="./images/icons/payment/card-ru.svg" alt="">
+                            </span>
+                                <span class="name">Карта (Россия)</span>
+                            </label>
+                        </div>
+                        <div class="payment-method">
+                            <input type="radio" name="payment" hidden value="we-chat" id="we-chat">
+                            <label for="we-chat">
+                            <span class="icon">
+                                <img src="./images/icons/payment/wechat.svg" alt="">
+                            </span>
+                                <span class="name">WeChat</span>
+                            </label>
+                        </div>
+                        <div class="payment-method">
+                            <input type="radio" name="payment" hidden value="pm" id="pm">
+                            <label for="pm">
+                            <span class="icon">
+                                <img src="./images/icons/payment/pm.svg" alt="">
+                            </span>
+                                <span class="name">Perfect Money</span>
+                            </label>
+                        </div>
+
+
+                        <div class="payment-method crypto">
+                            <input type="radio" name="payment" hidden value="eth" id="eth">
+                            <label for="eth">
+                            <span class="icon">
+                                <img src="./images/icons/payment/eth.svg" alt="">
+                            </span>
+                                <span class="name">Etherium</span>
+                            </label>
+                        </div>
+                        <div class="payment-method crypto">
+                            <input type="radio" name="payment" hidden value="btc" id="btc">
+                            <label for="btc">
+                            <span class="icon">
+                                <img src="./images/icons/payment/btc.svg" alt="">
+                            </span>
+                                <span class="name">Bitcoin</span>
+                            </label>
+                        </div>
+                        <div class="payment-method crypto">
+                            <input type="radio" name="payment" hidden value="ltc" id="ltc">
+                            <label for="ltc">
+                            <span class="icon">
+                                <img src="./images/icons/payment/ltc.svg" alt="">
+                            </span>
+                                <span class="name">Litecoin</span>
+                            </label>
+                        </div>
+                        <div class="payment-method crypto">
+                            <input type="radio" name="payment" hidden value="usdt-trx" id="usdt-trx">
+                            <label for="usdt-trx">
+                            <span class="icon">
+                                <img src="./images/icons/payment/usdt-trc.svg" alt="">
+                            </span>
+                                <span class="name">USDT (TRC-20)</span>
+                            </label>
+                        </div>
+                        <div class="payment-method crypto">
+                            <input type="radio" name="payment" hidden value="usdt-erc" id="usdt-erc">
+                            <label for="usdt-erc">
+                            <span class="icon">
+                                <img src="./images/icons/payment/usdt-erc.svg" alt="">
+                            </span>
+                                <span class="name">USDT (ERC-20)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="payment__actions">
+                    <button class="btn btn-primary">Перейти к оплате</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/vendors.min.js"></script>
+<script src="./js/header.min.js"></script>
+</body>
+</html>
