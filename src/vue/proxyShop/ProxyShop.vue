@@ -36,9 +36,6 @@ export default {
     shopType: {
       type: String,
       default: 'personal'
-    },
-    shopItems:{
-      type:Array,
     }
   },
   data() {

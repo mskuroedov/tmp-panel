@@ -92,7 +92,7 @@ export default {
 }
 
 .input {
-  width: 150px;
+  width: 70px;
   height: 24px;
   padding: 2px;
   background: #FFFFFF;
@@ -106,6 +106,15 @@ export default {
   &:focus{
     border-color: #4A6CF7;
     outline: none;
+  }
+  @media(max-width: 759px){
+    width: 150px;
+  }
+  @media(max-width: 999px){
+    width: 50px;
+  }
+  @media(min-width: 1859px){
+    width: 150px;
   }
 }
 </style>
