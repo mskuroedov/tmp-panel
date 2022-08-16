@@ -32,8 +32,7 @@ export default {
   },
   mounted() {
     this.tooltip = new Tooltip(this.$refs.text, {
-      html: true,
-      title: '&check;',
+      title: 'Скопирован',
       trigger:'manual'
     });
   }

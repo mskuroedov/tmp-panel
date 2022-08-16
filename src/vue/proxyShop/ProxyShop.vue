@@ -11,6 +11,7 @@
                  :key="i"/>
     </div>
     <Cart v-if="cartTouched"
+          ref="cart"
           :cart-component="shopItemComponent"
           :cart-items="cartItems"
           :grid-class="shopItemsGridClass"
@@ -110,7 +111,11 @@ export default {
       let itemToAdd = this.shopItems.find(item => item.id === id);
 
       if (itemToAdd) {
+
         this.cartItems.push({...itemToAdd, ...additionalData})
+        this.$nextTick(() => {
+          this.$refs.cart.$el.scrollIntoView({behavior: 'smooth'})
+        })
       }
     },
     updateItemPeriod({index, period}) {

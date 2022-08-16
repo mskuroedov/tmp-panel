@@ -50,7 +50,7 @@
           }
         }
 
-        @include media-breakpoint-between(md, xxxl) {
+        @include media-breakpoint-between(md, xxl) {
           display: flex;
           flex-direction: column;
           gap: 5px;
@@ -146,7 +146,8 @@
     &__head,
     &__item {
       display: grid;
-      grid-template-columns: 83px 190px 155px auto 125px 120px;
+      //grid-template-columns: 83px 190px 155px auto 125px 120px;
+      grid-template-columns: 9.2% 20.2% 16.6% 26.9% 14.4% 12.2%;
 
       .id,
       .auto-renewal {

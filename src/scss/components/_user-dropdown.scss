@@ -12,8 +12,9 @@
     font-size: 16px;
     line-height: 19px;
     color: #090E34;
-    padding: 15px 35px 15px 15px;
+    padding: 14px ;
     overflow: hidden;
+    border: 1px solid transparent;
     border-radius: 10px 10px 0 0;
 
     &:after {
@@ -31,6 +32,10 @@
       }
     }
 
+    &[aria-expanded="true"] {
+      border: 1px solid #F0F3F8;
+    }
+
     > a {
       font-size: 16px;
       line-height: 19px;
@@ -40,7 +45,8 @@
 
   .dropdown-menu {
     background: white;
-    border: 0;
+    border: 1px solid #F0F3F8;
+    border-top: 0;
     border-radius: 0 0 10px 10px;
     width: 100%;
     margin-top: -5px;
